@@ -1,9 +1,14 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-![plot](./assets/android1.png)
-![plot](./assets/android2.png)
-![plot](./assets/ios1.png)
-![plot](./assets/ios2.png)
+
+| Android      | IOS      |
+|------------|-------------|
+| <img src="./assets/android1.png" width="250"> | <img src="./assets/ios1.png" width="250"> |
+
+| Android      | IOS      |
+|------------|-------------|
+| <img src="./assets/android2.png" width="250"> | <img src="./assets/ios2.png" width="250"> |
+
 
 # Getting Started
 
