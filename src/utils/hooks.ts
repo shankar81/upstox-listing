@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import {UserHoldingStock, UserStat} from '../models/stock';
+import constants from './constants';
 
 export function useFetchUserHoldingAndStat() {
   const [loading, setLoading] = useState(false);
@@ -13,7 +14,7 @@ export function useFetchUserHoldingAndStat() {
 
   useEffect(() => {
     setLoading(true);
-    fetch('https://run.mocky.io/v3/bde7230e-bc91-43bc-901d-c79d008bddc8')
+    fetch(`${constants.api.baseUrl}/bde7230e-bc91-43bc-901d-c79d008bddc8`)
       .then(res => res.json())
       .then(res => {
         const _tempHoldings: UserHoldingStock[] = [];

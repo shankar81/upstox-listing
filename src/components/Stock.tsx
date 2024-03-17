@@ -1,6 +1,7 @@
 import {View, Text, StyleSheet} from 'react-native';
 import React from 'react';
 import {UserHoldingStock} from '../models/stock';
+import {colors} from '../theme';
 
 type StockProps = {data: UserHoldingStock};
 
@@ -33,8 +34,8 @@ const styles = StyleSheet.create({
   container: {
     padding: 10,
     borderBottomWidth: 1,
-    borderBottomColor: '#DDD',
-    backgroundColor: 'white',
+    borderBottomColor: colors.gray,
+    backgroundColor: colors.white,
   },
   row: {
     flexDirection: 'row',
@@ -42,6 +43,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   marginBottom: {marginBottom: 10},
-  text: {color: 'black'},
+  text: {color: colors.black},
   bold: {fontWeight: 'bold'},
 });

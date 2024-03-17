@@ -2,6 +2,7 @@ import React, {useMemo, useState} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {UserStat} from '../models/stock';
+import {colors} from '../theme';
 
 type BottomSheetProps = {data: UserStat};
 
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: '100%',
     bottom: 0,
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
   },
   iconContainer: {alignItems: 'center'},
   content: {padding: 10, paddingBottom: 20},
@@ -79,10 +80,10 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   touchable: {
-    backgroundColor: 'rgba(0,0,0,0.1)',
+    backgroundColor: colors['black.100'],
     borderRadius: 100,
     padding: 3,
   },
-  text: {color: 'black', fontSize: 16, marginBottom: 10},
+  text: {color: colors.black, fontSize: 16, marginBottom: 10},
   bold: {fontWeight: 'bold'},
 });
